@@ -1,0 +1,87 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Code\\ExtensionesTest\\VSIXProject1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A1777F7E-7A44-4C7B-ACC6-DDD6F6FA2261}|VSIXProject1\\VSIXProject1.csproj|e:\\code\\extensionestest\\vsixproject1\\vsixproject1\\frmversion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A1777F7E-7A44-4C7B-ACC6-DDD6F6FA2261}|VSIXProject1\\VSIXProject1.csproj|solutionrelative:vsixproject1\\frmversion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1777F7E-7A44-4C7B-ACC6-DDD6F6FA2261}|VSIXProject1\\VSIXProject1.csproj|E:\\Code\\ExtensionesTest\\VSIXProject1\\vsixproject1\\vsixproject1package.vsct||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A1777F7E-7A44-4C7B-ACC6-DDD6F6FA2261}|VSIXProject1\\VSIXProject1.csproj|solutionrelative:vsixproject1\\vsixproject1package.vsct||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1777F7E-7A44-4C7B-ACC6-DDD6F6FA2261}|VSIXProject1\\VSIXProject1.csproj|e:\\code\\extensionestest\\vsixproject1\\vsixproject1\\testcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1777F7E-7A44-4C7B-ACC6-DDD6F6FA2261}|VSIXProject1\\VSIXProject1.csproj|solutionrelative:vsixproject1\\testcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1777F7E-7A44-4C7B-ACC6-DDD6F6FA2261}|VSIXProject1\\VSIXProject1.csproj|e:\\code\\extensionestest\\vsixproject1\\vsixproject1\\frmversion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1777F7E-7A44-4C7B-ACC6-DDD6F6FA2261}|VSIXProject1\\VSIXProject1.csproj|solutionrelative:vsixproject1\\frmversion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "frmVersion.cs",
+              "DocumentMoniker": "E:\\Code\\ExtensionesTest\\VSIXProject1\\VSIXProject1\\frmVersion.cs",
+              "RelativeDocumentMoniker": "VSIXProject1\\frmVersion.cs",
+              "ToolTip": "E:\\Code\\ExtensionesTest\\VSIXProject1\\VSIXProject1\\frmVersion.cs",
+              "RelativeToolTip": "VSIXProject1\\frmVersion.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAIA6wCgAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-15T18:32:36.6Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "frmVersion.cs [Dise\u00F1o]",
+              "DocumentMoniker": "E:\\Code\\ExtensionesTest\\VSIXProject1\\VSIXProject1\\frmVersion.cs",
+              "RelativeDocumentMoniker": "VSIXProject1\\frmVersion.cs",
+              "ToolTip": "E:\\Code\\ExtensionesTest\\VSIXProject1\\VSIXProject1\\frmVersion.cs [Dise\u00F1o]",
+              "RelativeToolTip": "VSIXProject1\\frmVersion.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-15T18:31:03.955Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TestCommand.cs",
+              "DocumentMoniker": "E:\\Code\\ExtensionesTest\\VSIXProject1\\VSIXProject1\\TestCommand.cs",
+              "RelativeDocumentMoniker": "VSIXProject1\\TestCommand.cs",
+              "ToolTip": "E:\\Code\\ExtensionesTest\\VSIXProject1\\VSIXProject1\\TestCommand.cs",
+              "RelativeToolTip": "VSIXProject1\\TestCommand.cs",
+              "ViewState": "AgIAAE4AAAAAAAAAAADwv2gAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-15T17:04:07.775Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "VSIXProject1Package.vsct",
+              "DocumentMoniker": "E:\\Code\\ExtensionesTest\\VSIXProject1\\VSIXProject1\\VSIXProject1Package.vsct",
+              "RelativeDocumentMoniker": "VSIXProject1\\VSIXProject1Package.vsct",
+              "ToolTip": "E:\\Code\\ExtensionesTest\\VSIXProject1\\VSIXProject1\\VSIXProject1Package.vsct",
+              "RelativeToolTip": "VSIXProject1\\VSIXProject1Package.vsct",
+              "ViewState": "AgIAACAAAAAAAAAAAAAUwEEAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003464|",
+              "WhenOpened": "2025-07-15T16:54:52.33Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
