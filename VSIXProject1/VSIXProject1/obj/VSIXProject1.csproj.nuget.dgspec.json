@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Code\\ExtensionesTest\\VSIXProject1\\VSIXProject1\\VSIXProject1.csproj": {}
+    "C:\\VSS-DB\\vss-db-Cristian\\ExtensionesVisualStudio\\VSIXProject1\\VSIXProject1\\VSIXProject1.csproj": {}
   },
   "projects": {
-    "E:\\Code\\ExtensionesTest\\VSIXProject1\\VSIXProject1\\VSIXProject1.csproj": {
+    "C:\\VSS-DB\\vss-db-Cristian\\ExtensionesVisualStudio\\VSIXProject1\\VSIXProject1\\VSIXProject1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Code\\ExtensionesTest\\VSIXProject1\\VSIXProject1\\VSIXProject1.csproj",
+        "projectUniqueName": "C:\\VSS-DB\\vss-db-Cristian\\ExtensionesVisualStudio\\VSIXProject1\\VSIXProject1\\VSIXProject1.csproj",
         "projectName": "VSIXProject1",
-        "projectPath": "E:\\Code\\ExtensionesTest\\VSIXProject1\\VSIXProject1\\VSIXProject1.csproj",
-        "packagesPath": "C:\\Users\\Cristian\\.nuget\\packages\\",
-        "outputPath": "E:\\Code\\ExtensionesTest\\VSIXProject1\\VSIXProject1\\obj\\",
+        "projectPath": "C:\\VSS-DB\\vss-db-Cristian\\ExtensionesVisualStudio\\VSIXProject1\\VSIXProject1\\VSIXProject1.csproj",
+        "packagesPath": "C:\\Users\\ramir-cr\\.nuget\\packages\\",
+        "outputPath": "C:\\VSS-DB\\vss-db-Cristian\\ExtensionesVisualStudio\\VSIXProject1\\VSIXProject1\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "UsingMicrosoftNETSdk": false,
@@ -19,7 +19,8 @@
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Cristian\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ramir-cr\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 19.1.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -28,6 +29,8 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\VSS-DB\\España\\Extras\\Nugets Local": {},
+          "http://de-hv1-sr-diws1/NuGetServer/nuget": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {

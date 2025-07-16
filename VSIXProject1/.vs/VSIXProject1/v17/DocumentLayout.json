@@ -1,22 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\Code\\ExtensionesTest\\VSIXProject1\\",
+  "WorkspaceRootPath": "C:\\VSS-DB\\vss-db-Cristian\\ExtensionesVisualStudio\\VSIXProject1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A1777F7E-7A44-4C7B-ACC6-DDD6F6FA2261}|VSIXProject1\\VSIXProject1.csproj|e:\\code\\extensionestest\\vsixproject1\\vsixproject1\\frmversion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A1777F7E-7A44-4C7B-ACC6-DDD6F6FA2261}|VSIXProject1\\VSIXProject1.csproj|solutionrelative:vsixproject1\\frmversion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A1777F7E-7A44-4C7B-ACC6-DDD6F6FA2261}|VSIXProject1\\VSIXProject1.csproj|E:\\Code\\ExtensionesTest\\VSIXProject1\\vsixproject1\\vsixproject1package.vsct||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "AbsoluteMoniker": "D:0:0:{A1777F7E-7A44-4C7B-ACC6-DDD6F6FA2261}|VSIXProject1\\VSIXProject1.csproj|c:\\vss-db\\vss-db-cristian\\extensionesvisualstudio\\vsixproject1\\vsixproject1\\vsixproject1package.vsct||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
       "RelativeMoniker": "D:0:0:{A1777F7E-7A44-4C7B-ACC6-DDD6F6FA2261}|VSIXProject1\\VSIXProject1.csproj|solutionrelative:vsixproject1\\vsixproject1package.vsct||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A1777F7E-7A44-4C7B-ACC6-DDD6F6FA2261}|VSIXProject1\\VSIXProject1.csproj|e:\\code\\extensionestest\\vsixproject1\\vsixproject1\\testcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A1777F7E-7A44-4C7B-ACC6-DDD6F6FA2261}|VSIXProject1\\VSIXProject1.csproj|solutionrelative:vsixproject1\\testcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A1777F7E-7A44-4C7B-ACC6-DDD6F6FA2261}|VSIXProject1\\VSIXProject1.csproj|c:\\vss-db\\vss-db-cristian\\extensionesvisualstudio\\vsixproject1\\vsixproject1\\source.extension.vsixmanifest||{2868F8ED-DE25-439D-9F59-AD52458E9328}",
+      "RelativeMoniker": "D:0:0:{A1777F7E-7A44-4C7B-ACC6-DDD6F6FA2261}|VSIXProject1\\VSIXProject1.csproj|solutionrelative:vsixproject1\\source.extension.vsixmanifest||{2868F8ED-DE25-439D-9F59-AD52458E9328}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A1777F7E-7A44-4C7B-ACC6-DDD6F6FA2261}|VSIXProject1\\VSIXProject1.csproj|e:\\code\\extensionestest\\vsixproject1\\vsixproject1\\frmversion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A1777F7E-7A44-4C7B-ACC6-DDD6F6FA2261}|VSIXProject1\\VSIXProject1.csproj|solutionrelative:vsixproject1\\frmversion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A1777F7E-7A44-4C7B-ACC6-DDD6F6FA2261}|VSIXProject1\\VSIXProject1.csproj|C:\\VSS-DB\\vss-db-Cristian\\ExtensionesVisualStudio\\VSIXProject1\\vsixproject1\\testcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1777F7E-7A44-4C7B-ACC6-DDD6F6FA2261}|VSIXProject1\\VSIXProject1.csproj|solutionrelative:vsixproject1\\testcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,55 +22,45 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "frmVersion.cs",
-              "DocumentMoniker": "E:\\Code\\ExtensionesTest\\VSIXProject1\\VSIXProject1\\frmVersion.cs",
-              "RelativeDocumentMoniker": "VSIXProject1\\frmVersion.cs",
-              "ToolTip": "E:\\Code\\ExtensionesTest\\VSIXProject1\\VSIXProject1\\frmVersion.cs",
-              "RelativeToolTip": "VSIXProject1\\frmVersion.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAIA6wCgAAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-15T18:32:36.6Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "frmVersion.cs [Dise\u00F1o]",
-              "DocumentMoniker": "E:\\Code\\ExtensionesTest\\VSIXProject1\\VSIXProject1\\frmVersion.cs",
-              "RelativeDocumentMoniker": "VSIXProject1\\frmVersion.cs",
-              "ToolTip": "E:\\Code\\ExtensionesTest\\VSIXProject1\\VSIXProject1\\frmVersion.cs [Dise\u00F1o]",
-              "RelativeToolTip": "VSIXProject1\\frmVersion.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-15T18:31:03.955Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "DocumentIndex": 1,
+              "Title": "source.extension.vsixmanifest [Design]",
+              "DocumentMoniker": "C:\\VSS-DB\\vss-db-Cristian\\ExtensionesVisualStudio\\VSIXProject1\\VSIXProject1\\source.extension.vsixmanifest",
+              "RelativeDocumentMoniker": "VSIXProject1\\source.extension.vsixmanifest",
+              "ToolTip": "C:\\VSS-DB\\vss-db-Cristian\\ExtensionesVisualStudio\\VSIXProject1\\VSIXProject1\\source.extension.vsixmanifest [Design]",
+              "RelativeToolTip": "VSIXProject1\\source.extension.vsixmanifest [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003464|",
+              "WhenOpened": "2025-07-16T12:43:06.382Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "TestCommand.cs",
-              "DocumentMoniker": "E:\\Code\\ExtensionesTest\\VSIXProject1\\VSIXProject1\\TestCommand.cs",
+              "DocumentMoniker": "C:\\VSS-DB\\vss-db-Cristian\\ExtensionesVisualStudio\\VSIXProject1\\VSIXProject1\\TestCommand.cs",
               "RelativeDocumentMoniker": "VSIXProject1\\TestCommand.cs",
-              "ToolTip": "E:\\Code\\ExtensionesTest\\VSIXProject1\\VSIXProject1\\TestCommand.cs",
+              "ToolTip": "C:\\VSS-DB\\vss-db-Cristian\\ExtensionesVisualStudio\\VSIXProject1\\VSIXProject1\\TestCommand.cs",
               "RelativeToolTip": "VSIXProject1\\TestCommand.cs",
-              "ViewState": "AgIAAE4AAAAAAAAAAADwv2gAAAAvAAAAAAAAAA==",
+              "ViewState": "AgIAAJIAAAAAAAAAAAAkwJsAAABLAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-15T17:04:07.775Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-15T17:04:07.775Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "VSIXProject1Package.vsct",
-              "DocumentMoniker": "E:\\Code\\ExtensionesTest\\VSIXProject1\\VSIXProject1\\VSIXProject1Package.vsct",
+              "DocumentMoniker": "C:\\VSS-DB\\vss-db-Cristian\\ExtensionesVisualStudio\\VSIXProject1\\VSIXProject1\\VSIXProject1Package.vsct",
               "RelativeDocumentMoniker": "VSIXProject1\\VSIXProject1Package.vsct",
-              "ToolTip": "E:\\Code\\ExtensionesTest\\VSIXProject1\\VSIXProject1\\VSIXProject1Package.vsct",
+              "ToolTip": "C:\\VSS-DB\\vss-db-Cristian\\ExtensionesVisualStudio\\VSIXProject1\\VSIXProject1\\VSIXProject1Package.vsct",
               "RelativeToolTip": "VSIXProject1\\VSIXProject1Package.vsct",
-              "ViewState": "AgIAACAAAAAAAAAAAAAUwEEAAAAvAAAAAAAAAA==",
+              "ViewState": "AgIAADIAAAAAAAAAAAAuwFEAAAB8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003464|",
               "WhenOpened": "2025-07-15T16:54:52.33Z",
               "EditorCaption": ""

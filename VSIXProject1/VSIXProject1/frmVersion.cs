@@ -18,6 +18,10 @@ namespace VSIXProject1
         {
             InitializeComponent();
         }
+        public frmVersion(string versionAnteriorUsada):this()
+        {
+            txtVersion.Text=versionAnteriorUsada;
+        }
 
         private void btAceptar_Click(object sender, EventArgs e)
         {
