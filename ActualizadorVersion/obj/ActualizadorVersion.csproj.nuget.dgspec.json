@@ -1,0 +1,84 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\VSS-DB\\vss-db-Cristian\\ExtensionesVisualStudio\\ActualizadorVersion\\ActualizadorVersion.csproj": {}
+  },
+  "projects": {
+    "C:\\VSS-DB\\vss-db-Cristian\\ExtensionesVisualStudio\\ActualizadorVersion\\ActualizadorVersion.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\VSS-DB\\vss-db-Cristian\\ExtensionesVisualStudio\\ActualizadorVersion\\ActualizadorVersion.csproj",
+        "projectName": "ActualizadorVersion",
+        "projectPath": "C:\\VSS-DB\\vss-db-Cristian\\ExtensionesVisualStudio\\ActualizadorVersion\\ActualizadorVersion.csproj",
+        "packagesPath": "C:\\Users\\ramir-cr\\.nuget\\packages\\",
+        "outputPath": "C:\\VSS-DB\\vss-db-Cristian\\ExtensionesVisualStudio\\ActualizadorVersion\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "UsingMicrosoftNETSdk": false,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ramir-cr\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 19.1.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net472"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\VSS-DB\\España\\Extras\\Nugets Local": {},
+          "http://de-hv1-sr-diws1/NuGetServer/nuget": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net472": {
+            "projectReferences": {}
+          }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net472": {
+          "dependencies": {
+            "Microsoft.VSSDK.BuildTools": {
+              "target": "Package",
+              "version": "[17.13.2127, )",
+              "noWarn": [
+                "NU1604"
+              ]
+            },
+            "Microsoft.VisualStudio.SDK": {
+              "include": "Compile, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "target": "Package",
+              "version": "[17.0.32112.339, )",
+              "noWarn": [
+                "NU1604"
+              ]
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-arm64": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}
