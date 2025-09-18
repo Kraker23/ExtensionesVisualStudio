@@ -52,6 +52,7 @@
     <Compile Include="frmVersion.Designer.cs">
       <DependentUpon>frmVersion.cs</DependentUpon>
     </Compile>
+    <Compile Include="ItemProject.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ActualizadorVersionPackage.cs" />
   </ItemGroup>

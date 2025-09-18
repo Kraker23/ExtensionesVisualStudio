@@ -12,6 +12,7 @@ using System.Collections.Generic;
 using System.Windows.Forms;
 using VSLangProj;
 using System.Collections;
+using System.Linq;
 
 namespace ActualizadorVersion
 {
@@ -88,6 +89,9 @@ namespace ActualizadorVersion
         string Cambios = string.Empty;
         string NewVersion = string.Empty;
 
+        private static ItemProject solucion;
+        private static List<ItemProject> projectosActualizar;
+
         /// <summary>
         /// This function is the callback used to execute the command when the menu item is clicked.
         /// See the constructor to see how the menu item is associated with this function using
@@ -99,20 +103,24 @@ namespace ActualizadorVersion
         {
             try
             {
-                frmVersion frm = new frmVersion(NewVersion);
+                Hashtable mapHierarchies = new Hashtable();
+                DTE2 dte2 = Package.GetGlobalService(typeof(DTE)) as DTE2;
+                var sol = dte2.Solution;
+                //var projs = sol.Projects;
+                Projects projs = sol.Projects;
+                solucion = new ItemProject { IsFolder = false, Name = sol.FullName };
+                solucion = RecursivaProjectos(projs, false, solucion);
+
+                frmVersion frm = new frmVersion(NewVersion, solucion);
                 if (DialogResult.OK == frm.ShowDialog())
                 {
-                    //string NewVersion = "2.0.3";
                     NewVersion = frm.version;
-                    Hashtable mapHierarchies = new Hashtable();
+
                     Cambios = string.Empty;
-                    DTE2 dte2 = Package.GetGlobalService(typeof(DTE)) as DTE2;
-                    var sol = dte2.Solution;
-                    //var projs = sol.Projects;
-                    Projects projs = sol.Projects;
+                    projectosActualizar = frm.ActualizarTodos ? null : frm.projectosActualizar;
 
                     AddMessage($"Solucion => {sol.FullName} ({projs.Count})");
-                    RecursivaProjectos(projs);
+                    RecursivaProjectos(projs, true, solucion);
 
                     ThreadHelper.ThrowIfNotOnUIThread();
                     //string messageT = string.Format(CultureInfo.CurrentCulture, "Inside {0}.MenuItemCallback()", this.GetType().FullName);
@@ -140,24 +148,28 @@ namespace ActualizadorVersion
                     OLEMSGDEFBUTTON.OLEMSGDEFBUTTON_FIRST);
             }
         }
-
-        private void RecursivaProjectos(IEnumerable projs)
+        private ItemProject RecursivaProjectos(IEnumerable projs, bool actualizarVersion, ItemProject itemProject)
         {
+            //proyectos = actualizarVersion ? null : new List<ItemProject>();
+            ItemProject ItemProjectosHijo = null;
             foreach (var proj in projs)
             {
                 var project = proj as Project;
                 if (project.Kind == ProjectKinds.vsProjectKindSolutionFolder)
                 {
-                    AddMessage($"Carpeta => {project.Name} ");
+                    if (actualizarVersion) AddMessage($"Carpeta => {project.Name} ");
                     var projInFolders = project.ProjectItems;
+                    ItemProjectosHijo = new ItemProject { IsFolder = true, Name = project.Name };
 
                     var innerProjects = GetSolutionFolderProjects(project);
-                    RecursivaProjectos(innerProjects);
+                    ItemProjectosHijo = RecursivaProjectos(innerProjects, actualizarVersion, ItemProjectosHijo);
+                    if (ItemProjectosHijo.ItemProjectosHijo.Count() == 0) ItemProjectosHijo = null;
                 }
-                else //if (project.Kind == PrjKind.prjKindCSharpProject)
+                else if (project.Kind == PrjKind.prjKindCSharpProject)
                 {
-                    AddMessage($"Projecto => {project.Name} ");
-                    if (project.Properties != null)
+                    if (actualizarVersion) AddMessage($"Projecto => {project.Name} ");
+                    ItemProjectosHijo = new ItemProject { Name = project.Name, FullName = project.FullName };
+                    if (project.Properties != null && actualizarVersion && ExisteProyectoSeleccionado(project))
                     {
                         foreach (Property property in project.Properties)
                         {
@@ -167,12 +179,25 @@ namespace ActualizadorVersion
                                 string version_OLD = property.Value.ToString();
                                 property.Value = NewVersion;
                                 string version_NEW = property.Value.ToString();
-                                AddMessage($"Version {version_OLD} => {version_NEW}");
+                                if (actualizarVersion) AddMessage($"Version {version_OLD} => {version_NEW}");
                             }
                         }
                     }
                 }
+
+                if (ItemProjectosHijo != null) itemProject.ItemProjectosHijo.Add(ItemProjectosHijo);
             }
+            return itemProject;
+        }
+
+        private bool ExisteProyectoSeleccionado(Project project)
+        {
+            if (projectosActualizar != null)
+            {
+                var existe = projectosActualizar.FirstOrDefault(p => p.FullName == project.FullName);
+                if (existe == null) return false;
+            }
+            return true;
         }
 
         private static IEnumerable<Project> GetSolutionFolderProjects(Project project)
