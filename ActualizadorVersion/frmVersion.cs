@@ -17,6 +17,7 @@ namespace ActualizadorVersion
         public frmVersion()
         {
             InitializeComponent();
+            scBase.Panel2Collapsed = true;
         }
         public frmVersion(string versionAnteriorUsada):this()
         {
@@ -68,6 +69,9 @@ namespace ActualizadorVersion
             return false;
         }
 
-        
+        private void chkActualizarTodosProyectos_CheckedChanged(object sender, EventArgs e)
+        {
+            scBase.Panel2Collapsed = !chkActualizarTodosProyectos.Checked;
+        }
     }
 }

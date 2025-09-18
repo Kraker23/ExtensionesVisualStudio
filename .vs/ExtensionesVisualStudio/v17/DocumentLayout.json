@@ -1,18 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\VSS-DB\\vss-db-Cristian\\ExtensionesVisualStudio\\",
+  "WorkspaceRootPath": "E:\\Code\\ExtensionesVisualStudio\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0DDDB76F-10ED-4D63-AE2F-2DE14BBABFC4}|ActualizadorVersion\\ActualizadorVersion.csproj|c:\\vss-db\\vss-db-cristian\\extensionesvisualstudio\\actualizadorversion\\actualizadorversionpackage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0DDDB76F-10ED-4D63-AE2F-2DE14BBABFC4}|ActualizadorVersion\\ActualizadorVersion.csproj|solutionrelative:actualizadorversion\\actualizadorversionpackage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0DDDB76F-10ED-4D63-AE2F-2DE14BBABFC4}|ActualizadorVersion\\ActualizadorVersion.csproj|e:\\code\\extensionesvisualstudio\\actualizadorversion\\frmversion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{0DDDB76F-10ED-4D63-AE2F-2DE14BBABFC4}|ActualizadorVersion\\ActualizadorVersion.csproj|solutionrelative:actualizadorversion\\frmversion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0DDDB76F-10ED-4D63-AE2F-2DE14BBABFC4}|ActualizadorVersion\\ActualizadorVersion.csproj|c:\\vss-db\\vss-db-cristian\\extensionesvisualstudio\\actualizadorversion\\commandactualizador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{0DDDB76F-10ED-4D63-AE2F-2DE14BBABFC4}|ActualizadorVersion\\ActualizadorVersion.csproj|E:\\Code\\ExtensionesVisualStudio\\actualizadorversion\\commandactualizador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0DDDB76F-10ED-4D63-AE2F-2DE14BBABFC4}|ActualizadorVersion\\ActualizadorVersion.csproj|solutionrelative:actualizadorversion\\commandactualizador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0DDDB76F-10ED-4D63-AE2F-2DE14BBABFC4}|ActualizadorVersion\\ActualizadorVersion.csproj|c:\\vss-db\\vss-db-cristian\\extensionesvisualstudio\\actualizadorversion\\source.extension.vsixmanifest||{2868F8ED-DE25-439D-9F59-AD52458E9328}",
-      "RelativeMoniker": "D:0:0:{0DDDB76F-10ED-4D63-AE2F-2DE14BBABFC4}|ActualizadorVersion\\ActualizadorVersion.csproj|solutionrelative:actualizadorversion\\source.extension.vsixmanifest||{2868F8ED-DE25-439D-9F59-AD52458E9328}"
+      "AbsoluteMoniker": "D:0:0:{0DDDB76F-10ED-4D63-AE2F-2DE14BBABFC4}|ActualizadorVersion\\ActualizadorVersion.csproj|e:\\code\\extensionesvisualstudio\\actualizadorversion\\frmversion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DDDB76F-10ED-4D63-AE2F-2DE14BBABFC4}|ActualizadorVersion\\ActualizadorVersion.csproj|solutionrelative:actualizadorversion\\frmversion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,34 +22,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ActualizadorVersionPackage.cs",
-              "DocumentMoniker": "C:\\VSS-DB\\vss-db-Cristian\\ExtensionesVisualStudio\\ActualizadorVersion\\ActualizadorVersionPackage.cs",
-              "RelativeDocumentMoniker": "ActualizadorVersion\\ActualizadorVersionPackage.cs",
-              "ToolTip": "C:\\VSS-DB\\vss-db-Cristian\\ExtensionesVisualStudio\\ActualizadorVersion\\ActualizadorVersionPackage.cs",
-              "RelativeToolTip": "ActualizadorVersion\\ActualizadorVersionPackage.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-04T13:18:47.368Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "commandActualizador.cs",
-              "DocumentMoniker": "C:\\VSS-DB\\vss-db-Cristian\\ExtensionesVisualStudio\\ActualizadorVersion\\commandActualizador.cs",
+              "DocumentMoniker": "E:\\Code\\ExtensionesVisualStudio\\ActualizadorVersion\\commandActualizador.cs",
               "RelativeDocumentMoniker": "ActualizadorVersion\\commandActualizador.cs",
-              "ToolTip": "C:\\VSS-DB\\vss-db-Cristian\\ExtensionesVisualStudio\\ActualizadorVersion\\commandActualizador.cs",
+              "ToolTip": "E:\\Code\\ExtensionesVisualStudio\\ActualizadorVersion\\commandActualizador.cs",
               "RelativeToolTip": "ActualizadorVersion\\commandActualizador.cs",
-              "ViewState": "AgIAAJAAAAAAAAAAAAAmwAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAHMAAAAAAAAAAAAcwIUAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-04T13:18:29.976Z",
               "EditorCaption": ""
@@ -57,14 +40,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "source.extension.vsixmanifest [Design]",
-              "DocumentMoniker": "C:\\VSS-DB\\vss-db-Cristian\\ExtensionesVisualStudio\\ActualizadorVersion\\source.extension.vsixmanifest",
-              "RelativeDocumentMoniker": "ActualizadorVersion\\source.extension.vsixmanifest",
-              "ToolTip": "C:\\VSS-DB\\vss-db-Cristian\\ExtensionesVisualStudio\\ActualizadorVersion\\source.extension.vsixmanifest [Design]",
-              "RelativeToolTip": "ActualizadorVersion\\source.extension.vsixmanifest [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003464|",
-              "WhenOpened": "2025-07-17T15:02:44.82Z",
-              "EditorCaption": " [Design]"
+              "Title": "frmVersion.cs",
+              "DocumentMoniker": "E:\\Code\\ExtensionesVisualStudio\\ActualizadorVersion\\frmVersion.cs",
+              "RelativeDocumentMoniker": "ActualizadorVersion\\frmVersion.cs",
+              "ToolTip": "E:\\Code\\ExtensionesVisualStudio\\ActualizadorVersion\\frmVersion.cs",
+              "RelativeToolTip": "ActualizadorVersion\\frmVersion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-18T13:31:22.781Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "frmVersion.cs [Dise\u00F1o]",
+              "DocumentMoniker": "E:\\Code\\ExtensionesVisualStudio\\ActualizadorVersion\\frmVersion.cs",
+              "RelativeDocumentMoniker": "ActualizadorVersion\\frmVersion.cs",
+              "ToolTip": "E:\\Code\\ExtensionesVisualStudio\\ActualizadorVersion\\frmVersion.cs [Dise\u00F1o]",
+              "RelativeToolTip": "ActualizadorVersion\\frmVersion.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-18T13:28:41.12Z",
+              "EditorCaption": " [Dise\u00F1o]"
             }
           ]
         }

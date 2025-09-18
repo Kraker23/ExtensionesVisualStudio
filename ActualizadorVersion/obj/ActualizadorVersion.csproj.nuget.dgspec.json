@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\VSS-DB\\vss-db-Cristian\\ExtensionesVisualStudio\\ActualizadorVersion\\ActualizadorVersion.csproj": {}
+    "E:\\Code\\ExtensionesVisualStudio\\ActualizadorVersion\\ActualizadorVersion.csproj": {}
   },
   "projects": {
-    "C:\\VSS-DB\\vss-db-Cristian\\ExtensionesVisualStudio\\ActualizadorVersion\\ActualizadorVersion.csproj": {
+    "E:\\Code\\ExtensionesVisualStudio\\ActualizadorVersion\\ActualizadorVersion.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\VSS-DB\\vss-db-Cristian\\ExtensionesVisualStudio\\ActualizadorVersion\\ActualizadorVersion.csproj",
+        "projectUniqueName": "E:\\Code\\ExtensionesVisualStudio\\ActualizadorVersion\\ActualizadorVersion.csproj",
         "projectName": "ActualizadorVersion",
-        "projectPath": "C:\\VSS-DB\\vss-db-Cristian\\ExtensionesVisualStudio\\ActualizadorVersion\\ActualizadorVersion.csproj",
-        "packagesPath": "C:\\Users\\ramir-cr\\.nuget\\packages\\",
-        "outputPath": "C:\\VSS-DB\\vss-db-Cristian\\ExtensionesVisualStudio\\ActualizadorVersion\\obj\\",
+        "projectPath": "E:\\Code\\ExtensionesVisualStudio\\ActualizadorVersion\\ActualizadorVersion.csproj",
+        "packagesPath": "C:\\Users\\Cristian\\.nuget\\packages\\",
+        "outputPath": "E:\\Code\\ExtensionesVisualStudio\\ActualizadorVersion\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "UsingMicrosoftNETSdk": false,
@@ -19,8 +19,7 @@
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\ramir-cr\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 19.1.config",
+          "C:\\Users\\Cristian\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -29,8 +28,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\VSS-DB\\España\\Extras\\Nugets Local": {},
-          "http://de-hv1-sr-diws1/NuGetServer/nuget": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
