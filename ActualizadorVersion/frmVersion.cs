@@ -5,11 +5,13 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Windows.Input;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ProgressBar;
 
 namespace ActualizadorVersion
 {
@@ -65,6 +67,7 @@ namespace ActualizadorVersion
             else
             {
                 TreeNode node = new TreeNode($"{solucion.Name}", 0, 0);
+                node.Tag = solucion;
                 node = AddProyectosTree(solucion.ItemProjectosHijo, node);
                 tProyectos.Nodes.Add(node);
             }
@@ -78,6 +81,7 @@ namespace ActualizadorVersion
             foreach (ItemProject project in projects)
             {
                 nodeAux = new TreeNode($"{project.Name}", project.IsFolder ? 0 : 1, project.IsFolder ? 0 : 1);
+                nodeAux.Tag = project;
                 if (project.IsFolder)
                 {
                     nodeAux = AddProyectosTree(project.ItemProjectosHijo, nodeAux);
@@ -89,8 +93,10 @@ namespace ActualizadorVersion
 
         private void btAceptar_Click(object sender, EventArgs e)
         {
+            RecuperarProyectosSeleccionados(tProyectos.Nodes);
             ValidarNumeroVersion();
         }
+
 
         private void btCancelar_Click(object sender, EventArgs e)
         {
@@ -138,17 +144,39 @@ namespace ActualizadorVersion
 
         private void tProyectos_AfterCheck(object sender, TreeViewEventArgs e)
         {
-            if (e.Node!=null )
-            {   
-                if (e.Node.Checked)
-                {
+            if (e.Node != null)
+            {
+                CheckCascade(e.Node, e.Node.Checked);
+            }
+        }
 
+        private void CheckCascade(TreeNode node, bool check)
+        {
+            foreach (TreeNode child in node.Nodes)
+            {
+                child.Checked = check;
+                if (child.Nodes.Count > 0)
+                {
+                    CheckCascade(child, check);
                 }
-                else
-                {
+            }
+        }
 
+        private void RecuperarProyectosSeleccionados(TreeNodeCollection nodes)
+        {
+            if (!ActualizarTodos)
+            {
+                if (projectosActualizar == null) projectosActualizar = new List<ItemProject>();
+                foreach (TreeNode node in nodes)
+                {
+                    if (node.Checked) projectosActualizar.Add((ItemProject)node.Tag);
+                    if (node.Nodes.Count > 0) RecuperarProyectosSeleccionados(node.Nodes);
                 }
             }
         }
     }
+
+
+
+
 }

@@ -151,9 +151,10 @@ namespace ActualizadorVersion
         private ItemProject RecursivaProjectos(IEnumerable projs, bool actualizarVersion, ItemProject itemProject)
         {
             //proyectos = actualizarVersion ? null : new List<ItemProject>();
-            ItemProject ItemProjectosHijo = null;
+            //ItemProject ItemProjectosHijo = null;
             foreach (var proj in projs)
             {
+                ItemProject ItemProjectosHijo = null;
                 var project = proj as Project;
                 if (project.Kind == ProjectKinds.vsProjectKindSolutionFolder)
                 {
@@ -192,7 +193,7 @@ namespace ActualizadorVersion
 
         private bool ExisteProyectoSeleccionado(Project project)
         {
-            if (projectosActualizar != null)
+            if (projectosActualizar != null && projectosActualizar.Count>0)
             {
                 var existe = projectosActualizar.FirstOrDefault(p => p.FullName == project.FullName);
                 if (existe == null) return false;
