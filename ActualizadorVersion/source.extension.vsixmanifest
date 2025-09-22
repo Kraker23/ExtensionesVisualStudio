@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
     <Metadata>
-        <Identity Id="ActualizadorVersion.88e04023-e514-4c27-a911-660841c4d275" Version="1.2" Language="es-ES" Publisher="thekraker23@hotmail.com" />
+        <Identity Id="ActualizadorVersion.88e04023-e514-4c27-a911-660841c4d275" Version="1.3" Language="es-ES" Publisher="thekraker23@hotmail.com" />
         <DisplayName>Actualizador Version</DisplayName>
         <Description xml:space="preserve">Actualizador Version
 Funcionalidad para poner todos los projectos de una solucion, que tienen configurado un propiedad de version en el csproj</Description>
@@ -20,6 +20,6 @@ Funcionalidad para poner todos los projectos de una solucion, que tienen configu
     </Prerequisites>
     <Assets>
         <Asset Type="Microsoft.VisualStudio.VsPackage" d:Source="Project" d:ProjectName="%CurrentProject%" Path="|%CurrentProject%;PkgdefProjectOutputGroup|" />
-		<Asset Type="Microsoft.VisualStudio.MefComponent" d:Source="Project" d:ProjectName="%CurrentProject%" Path="|%CurrentProject%|" />
+        <Asset Type="Microsoft.VisualStudio.MefComponent" d:Source="Project" d:ProjectName="%CurrentProject%" Path="|%CurrentProject%|" />
     </Assets>
 </PackageManifest>
