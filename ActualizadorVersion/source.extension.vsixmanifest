@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
     <Metadata>
-        <Identity Id="ActualizadorVersion.88e04023-e514-4c27-a911-660841c4d275" Version="1.3" Language="es-ES" Publisher="thekraker23@hotmail.com" />
+        <Identity Id="ActualizadorVersion.88e04023-e514-4c27-a911-660841c4d275" Version="1.4" Language="es-ES" Publisher="Kraker" />
         <DisplayName>Actualizador Version</DisplayName>
         <Description xml:space="preserve">Actualizador Version
 Funcionalidad para poner todos los projectos de una solucion, que tienen configurado un propiedad de version en el csproj</Description>

@@ -44,7 +44,7 @@ namespace ActualizadorVersion
         {
             lblError.Visible = false;
 
-            scBase.Panel2Collapsed = true;
+            ControlarCollapsePanel2();
             tProyectos.CheckBoxes = true;
 
             // Add nodes to treeView1.
@@ -139,7 +139,13 @@ namespace ActualizadorVersion
 
         private void chkActualizarTodosProyectos_CheckedChanged(object sender, EventArgs e)
         {
+            ControlarCollapsePanel2();
+        }
+
+        private void ControlarCollapsePanel2()
+        {
             scBase.Panel2Collapsed = chkActualizarTodosProyectos.Checked;
+            this.Size = new Size(this.Size.Width, chkActualizarTodosProyectos.Checked ? 150 : 645);
         }
 
         private void tProyectos_AfterCheck(object sender, TreeViewEventArgs e)

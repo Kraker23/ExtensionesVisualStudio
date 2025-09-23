@@ -49,7 +49,7 @@
             // 
             this.txtVersion.Location = new System.Drawing.Point(12, 35);
             this.txtVersion.Name = "txtVersion";
-            this.txtVersion.Size = new System.Drawing.Size(194, 26);
+            this.txtVersion.Size = new System.Drawing.Size(194, 20);
             this.txtVersion.TabIndex = 0;
             this.txtVersion.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtVersion_KeyPress);
             // 
@@ -58,7 +58,7 @@
             this.lblVersion.AutoSize = true;
             this.lblVersion.Location = new System.Drawing.Point(8, 12);
             this.lblVersion.Name = "lblVersion";
-            this.lblVersion.Size = new System.Drawing.Size(198, 20);
+            this.lblVersion.Size = new System.Drawing.Size(134, 13);
             this.lblVersion.TabIndex = 4;
             this.lblVersion.Text = "Introduce la nueva Versión";
             // 
@@ -88,7 +88,7 @@
             this.lblError.ForeColor = System.Drawing.Color.Red;
             this.lblError.Location = new System.Drawing.Point(242, 44);
             this.lblError.Name = "lblError";
-            this.lblError.Size = new System.Drawing.Size(168, 20);
+            this.lblError.Size = new System.Drawing.Size(113, 13);
             this.lblError.TabIndex = 5;
             this.lblError.Text = "Error versión no Valida";
             this.lblError.Visible = false;
@@ -100,7 +100,7 @@
             this.chkActualizarTodosProyectos.CheckState = System.Windows.Forms.CheckState.Checked;
             this.chkActualizarTodosProyectos.Location = new System.Drawing.Point(31, 67);
             this.chkActualizarTodosProyectos.Name = "chkActualizarTodosProyectos";
-            this.chkActualizarTodosProyectos.Size = new System.Drawing.Size(239, 24);
+            this.chkActualizarTodosProyectos.Size = new System.Drawing.Size(166, 17);
             this.chkActualizarTodosProyectos.TabIndex = 6;
             this.chkActualizarTodosProyectos.Text = "Actualizar todos los proyectos";
             this.chkActualizarTodosProyectos.UseVisualStyleBackColor = true;
@@ -109,6 +109,7 @@
             // scBase
             // 
             this.scBase.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.scBase.FixedPanel = System.Windows.Forms.FixedPanel.Panel1;
             this.scBase.IsSplitterFixed = true;
             this.scBase.Location = new System.Drawing.Point(0, 0);
             this.scBase.Name = "scBase";
@@ -126,8 +127,8 @@
             // scBase.Panel2
             // 
             this.scBase.Panel2.Controls.Add(this.tProyectos);
-            this.scBase.Size = new System.Drawing.Size(434, 617);
-            this.scBase.SplitterDistance = 99;
+            this.scBase.Size = new System.Drawing.Size(444, 593);
+            this.scBase.SplitterDistance = 97;
             this.scBase.TabIndex = 7;
             // 
             // tProyectos
@@ -138,7 +139,7 @@
             this.tProyectos.Location = new System.Drawing.Point(0, 0);
             this.tProyectos.Name = "tProyectos";
             this.tProyectos.SelectedImageIndex = 0;
-            this.tProyectos.Size = new System.Drawing.Size(434, 514);
+            this.tProyectos.Size = new System.Drawing.Size(444, 492);
             this.tProyectos.TabIndex = 0;
             this.tProyectos.AfterCheck += new System.Windows.Forms.TreeViewEventHandler(this.tProyectos_AfterCheck);
             // 
@@ -153,7 +154,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(434, 617);
+            this.ClientSize = new System.Drawing.Size(444, 593);
             this.Controls.Add(this.scBase);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Name = "frmVersion";
