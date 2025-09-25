@@ -1,10 +1,14 @@
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011">
   <Metadata>
-    <Identity Id="ActualizadorVersion.88e04023-e514-4c27-a911-660841c4d275" Version="1.2" Language="es-ES" Publisher="thekraker23@hotmail.com" />
+    <Identity Id="ActualizadorVersion.88e04023-e514-4c27-a911-660841c4d275" Version="1.6" Language="es-ES" Publisher="Kraker" />
     <DisplayName>Actualizador Version</DisplayName>
-    <Description xml:space="preserve">Actualizador Version
-Funcionalidad para poner todos los projectos de una solucion, que tienen configurado un propiedad de version en el csproj</Description>
+    <Description xml:space="preserve">Actualizador Versión 
+Funcionalidad para poner todos los proyectos de una solución, que tienen configurado un propiedad de versión en el csproj
+
+Seleccionable la versión a poner y en que proyectos se quiere hacer el cambio.</Description>
     <MoreInfo>https://github.com/Kraker23/ExtensionesVisualStudio</MoreInfo>
+    <ReleaseNotes>ReleaseNotes.html</ReleaseNotes>
+    <Icon>logo128.ico</Icon>
   </Metadata>
   <Installation>
     <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[17.0, 18.0)">

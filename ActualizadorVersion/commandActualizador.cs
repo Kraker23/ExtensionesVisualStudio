@@ -87,6 +87,7 @@ namespace ActualizadorVersion
         }
 
         string Cambios = string.Empty;
+        string errores = string.Empty;
         string NewVersion = string.Empty;
 
         private static ItemProject solucion;
@@ -117,6 +118,7 @@ namespace ActualizadorVersion
                     NewVersion = frm.version;
 
                     Cambios = string.Empty;
+                    errores = string.Empty;
                     projectosActualizar = frm.ActualizarTodos ? null : frm.projectosActualizar;
 
                     AddMessage($"Solucion => {sol.FullName} ({projs.Count})");
@@ -126,6 +128,13 @@ namespace ActualizadorVersion
                     //string messageT = string.Format(CultureInfo.CurrentCulture, "Inside {0}.MenuItemCallback()", this.GetType().FullName);
                     string titleT = $"Actualizada la version a {NewVersion}";
                     // Show a message box to prove we were here
+
+                    if (!string.IsNullOrEmpty(errores))
+                    {
+                        titleT = $"ERROR al Actualizada la version a {NewVersion}";
+                        Cambios = $"ERRORES: {Environment.NewLine} {errores} {Environment.NewLine} {Environment.NewLine} Cambios :{Environment.NewLine} {Cambios}";
+                    }
+
                     VsShellUtilities.ShowMessageBox(
                         this.package,
                         Cambios,
@@ -172,16 +181,26 @@ namespace ActualizadorVersion
                     ItemProjectosHijo = new ItemProject { Name = project.Name, FullName = project.FullName };
                     if (project.Properties != null && actualizarVersion && ExisteProyectoSeleccionado(project))
                     {
-                        foreach (Property property in project.Properties)
+                        try
                         {
-                            string name = property.Name;
-                            if (property.Value != null && property.Name == "Version")
+                            foreach (Property property in project.Properties)
                             {
-                                string version_OLD = property.Value.ToString();
-                                property.Value = NewVersion;
-                                string version_NEW = property.Value.ToString();
-                                if (actualizarVersion) AddMessage($"Version {version_OLD} => {version_NEW}");
+                                //project.Properties.Item("TargetFrameworkMoniker").Valuev//".NETFramework,Version=v4.8"
+                                //esto nos podria servir para identificar el tipo de proyecto y hacer diferencias,
+                                string name = property.Name;
+                                //pero si primero buscamos si la propiedad es la que queremos, solucionamos el problema de propiedades sin valor
+                                if (property !=null && property.Name == "Version" && property.Value != null )
+                                {
+                                    string version_OLD = property.Value.ToString();
+                                    property.Value = NewVersion;
+                                    string version_NEW = property.Value.ToString();
+                                    if (actualizarVersion) AddMessage($"Version {version_OLD} => {version_NEW}");
+                                }
                             }
+                        }
+                        catch (Exception ex)
+                        {
+                            if (actualizarVersion) AddMessage($"--> ERROR: Projecto => {project.Name} -> {ex.Message}");
                         }
                     }
                 }
@@ -219,9 +238,12 @@ namespace ActualizadorVersion
             return projects;
         }
 
-        private void AddMessage(string message)
+        private void AddMessage(string message,bool isError=false)
         {
-            Cambios = $"{Cambios}{message} {Environment.NewLine}";
+            if (isError)
+                errores = $"{errores}{message} {Environment.NewLine}";
+            else
+                Cambios = $"{Cambios}{message} {Environment.NewLine}";
         }
     }
 }
