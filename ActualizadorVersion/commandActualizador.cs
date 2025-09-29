@@ -189,7 +189,7 @@ namespace ActualizadorVersion
                                 //esto nos podria servir para identificar el tipo de proyecto y hacer diferencias,
                                 string name = property.Name;
                                 //pero si primero buscamos si la propiedad es la que queremos, solucionamos el problema de propiedades sin valor
-                                if (property !=null && property.Name == "Version" && property.Value != null )
+                                if (property != null && property.Name == "Version" && property.Value != null)
                                 {
                                     string version_OLD = property.Value.ToString();
                                     property.Value = NewVersion;
@@ -203,16 +203,32 @@ namespace ActualizadorVersion
                             if (actualizarVersion) AddMessage($"--> ERROR: Projecto => {project.Name} -> {ex.Message}");
                         }
                     }
-                }
+                    else if (project.Properties != null && !actualizarVersion && ItemProjectosHijo != null)
+                    {
+                        try
+                        {
+                            var prop = project.Properties.Item("Version");
+                            if (prop != null && prop.Value != null)
+                            {
+                                string version_OLD = prop.Value.ToString();
+                                ItemProjectosHijo.Version = version_OLD;
+                            }
+                        }
+                        catch
+                        {//en caso de fallo al buscar la version, pues no la añadimos                            
+                        }
+                    }
 
-                if (ItemProjectosHijo != null) itemProject.ItemProjectosHijo.Add(ItemProjectosHijo);
+                    if (ItemProjectosHijo != null) itemProject.ItemProjectosHijo.Add(ItemProjectosHijo);
+                }
+                
             }
             return itemProject;
         }
 
         private bool ExisteProyectoSeleccionado(Project project)
         {
-            if (projectosActualizar != null && projectosActualizar.Count>0)
+            if (projectosActualizar != null && projectosActualizar.Count > 0)
             {
                 var existe = projectosActualizar.FirstOrDefault(p => p.FullName == project.FullName);
                 if (existe == null) return false;
@@ -238,7 +254,7 @@ namespace ActualizadorVersion
             return projects;
         }
 
-        private void AddMessage(string message,bool isError=false)
+        private void AddMessage(string message, bool isError = false)
         {
             if (isError)
                 errores = $"{errores}{message} {Environment.NewLine}";

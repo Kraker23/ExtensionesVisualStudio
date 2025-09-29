@@ -1,3 +1,7 @@
+# Notas de la versión 1.7
+
+## Cambios desde la versión 1.6 a 1.7
+- **Nueva funcionalidad:** Ahora es posible ver la version de cada proyecto antes de actualizar, en el arbol.
 # Notas de la versión 1.6
 
 ## Cambios desde la versión 1.5 a 1.6
@@ -8,6 +12,8 @@
 - **Gestión de errores:** Se mejoró la captura y visualización de errores durante el proceso de actualización de versiones.
 - **Mensajes informativos:** Se muestran mensajes detallados sobre los cambios realizados y los errores encontrados.
 - **Compatibilidad:** El paquete sigue dirigido a Visual Studio 2022 y .NET Framework 4.7.2.
+
+
 
 ---
 Para más información, visite: [Repositorio en GitHub](https://github.com/Kraker23/ExtensionesVisualStudio)

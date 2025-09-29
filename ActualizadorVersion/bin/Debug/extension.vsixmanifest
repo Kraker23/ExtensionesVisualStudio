@@ -1,6 +1,6 @@
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011">
   <Metadata>
-    <Identity Id="ActualizadorVersion.88e04023-e514-4c27-a911-660841c4d275" Version="1.6" Language="es-ES" Publisher="Kraker" />
+    <Identity Id="ActualizadorVersion.88e04023-e514-4c27-a911-660841c4d275" Version="1.7" Language="es-ES" Publisher="Kraker" />
     <DisplayName>Actualizador Version</DisplayName>
     <Description xml:space="preserve">Actualizador Versión 
 Funcionalidad para poner todos los proyectos de una solución, que tienen configurado un propiedad de versión en el csproj

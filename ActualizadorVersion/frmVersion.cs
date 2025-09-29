@@ -66,7 +66,7 @@ namespace ActualizadorVersion
             }
             else
             {
-                TreeNode node = new TreeNode($"{solucion.Name}", 0, 0);
+                TreeNode node = new TreeNode(solucion.ToString(), 0, 0);
                 node.Tag = solucion;
                 node = AddProyectosTree(solucion.ItemProjectosHijo, node);
                 tProyectos.Nodes.Add(node);
@@ -80,7 +80,7 @@ namespace ActualizadorVersion
             TreeNode nodeAux;
             foreach (ItemProject project in projects)
             {
-                nodeAux = new TreeNode($"{project.Name}", project.IsFolder ? 0 : 1, project.IsFolder ? 0 : 1);
+                nodeAux = new TreeNode(project.ToString(), project.IsFolder ? 0 : 1, project.IsFolder ? 0 : 1);
                 nodeAux.Tag = project;
                 if (project.IsFolder)
                 {
